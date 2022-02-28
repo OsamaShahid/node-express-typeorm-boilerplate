@@ -31,9 +31,9 @@ async function hasYarn() {
 if (process.argv.length < 3) {
   console.log('Please specify the target project directory.');
   console.log('For example:');
-  console.log('    npx create-node-express-app my-app');
+  console.log('    npx create-node-express-typeorm-app my-app');
   console.log('    OR');
-  console.log('    npm init node-express-app my-app');
+  console.log('    npm init node-express-typeorm-app my-app');
   process.exit(1);
 }
 
@@ -41,7 +41,7 @@ if (process.argv.length < 3) {
 const ownPath = process.cwd();
 const folderName = process.argv[2];
 const appPath = path.join(ownPath, folderName);
-const repo = 'https://github.com/hagopj13/node-express-boilerplate.git';
+const repo = 'https://github.com/OsamaShahid/node-express-typeorm-boilerplate.git';
 
 // Check if directory already exists
 try {
@@ -85,8 +85,9 @@ async function setup() {
     await runCmd('npx rimraf ./.git');
 
     // Remove extra files
-    fs.unlinkSync(path.join(appPath, 'CONTRIBUTING.md'));
-    fs.unlinkSync(path.join(appPath, 'bin', 'createNodeExpressApp.js'));
+    fs.unlinkSync(path.join(appPath, 'CHANGELOG.md'));
+    fs.unlinkSync(path.join(appPath, 'CONTRIBUTION.md'));
+    fs.unlinkSync(path.join(appPath, 'bin', 'createNodeExpressTypeormApp.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
     if (!useYarn) {
       fs.unlinkSync(path.join(appPath, 'yarn.lock'));
