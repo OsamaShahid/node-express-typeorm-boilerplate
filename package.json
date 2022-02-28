@@ -1,9 +1,9 @@
 {
-  "name": "nodejs-typescript-nodejs-express-app",
+  "name": "node-express-typeorm-app",
   "version": "1.0.0",
-  "bin": "bin/createTypescriptNodejsApp.js",
+  "bin": "bin/createNodeExpressTypeormApp.js",
   "description": "Create a Node.js (typescript) app for building production-ready RESTful APIs using Express, by running one command",
-  "repository": "https://github.com/hagopj13/node-express-boilerplate.git",
+  "repository": "https://github.com/OsamaShahid/node-express-typeorm-boilerplate.git",
   "main": "dist/index.js",
   "engines": {
     "node": ">=v16.13.1"

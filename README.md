@@ -1,4 +1,4 @@
-# TypeScript nodeJs Rest API Server Boilerplate with typeorm
+# nodeJs Rest API Server Boilerplate with typeorm
 
 A boilerplate/starter project for quickly building RESTful APIs using Node.js, Express, and typeorm.
 
@@ -11,13 +11,13 @@ Setup database settings inside `ormconfig.json` file
 To create a project, simply run:
 
 ```bash
-npx create-typescript-nodejs-express-app <project-name>
+npx create-node-express-typeorm-app <project-name>
 ```
 
 Or
 
 ```bash
-npm init typescript-nodejs-express-app <project-name>
+npm init node-express-typeorm-app <project-name>
 ```
 
 ## Manual Installation
@@ -27,8 +27,8 @@ If you would still prefer to do the installation manually, follow these steps:
 Clone the repo:
 
 ```bash
-git clone --depth 1 https://github.com/hagopj13/node-express-boilerplate.git
-cd typescript-node-express-boilerplate
+git clone --depth 1 https://github.com/OsamaShahid/node-express-typeorm-boilerplate.git
+cd node-express-typeorm-boilerplate
 npx rimraf ./.git
 ```
 

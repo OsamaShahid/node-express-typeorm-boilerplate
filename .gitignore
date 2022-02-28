@@ -1,0 +1,9 @@
+# Dependency directory
+# https://docs.npmjs.com/cli/shrinkwrap#caveats
+node_modules
+
+.idea
+.vscode
+dist
+.DS_Store
+.vscode

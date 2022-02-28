@@ -5,7 +5,7 @@ const envVarsSchema = Joi.object()
     NODE_ENV: Joi.string()
       .valid("production", "development", "test")
       .required(),
-    PROJECT_ROOT: Joi.string().default("/path/to/typescript-nodeJs-boilerplate/server"),
+    PROJECT_ROOT: Joi.string().default("/path/to/node-express-typeorm-boilerplate"),
     PORT: Joi.number().default(3000),
     HOST: Joi.string().default("localhost"),
     PROTOCOL: Joi.string().default("http"),
