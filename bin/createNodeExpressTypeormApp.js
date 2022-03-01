@@ -69,15 +69,11 @@ async function setup() {
     // Install dependencies
     const useYarn = await hasYarn();
     console.log('Installing dependencies...');
-    if (useYarn) {
-      await runCmd('yarn install');
-    } else {
-      await runCmd('npm install');
-    }
+    await runCmd('npm install');
     console.log('Dependencies installed successfully.');
     console.log();
 
-    // Copy envornment variables
+    // Copy environment variables
     fs.copyFileSync(path.join(appPath, '.env.example'), path.join(appPath, '.env'));
     console.log('Environment files copied.');
 
@@ -89,16 +85,13 @@ async function setup() {
     fs.unlinkSync(path.join(appPath, 'CONTRIBUTION.md'));
     fs.unlinkSync(path.join(appPath, 'bin', 'createNodeExpressTypeormApp.js'));
     fs.rmdirSync(path.join(appPath, 'bin'));
-    if (!useYarn) {
-      fs.unlinkSync(path.join(appPath, 'yarn.lock'));
-    }
 
     console.log('Installation is now complete!');
     console.log();
 
     console.log('We suggest that you start by typing:');
     console.log(`    cd ${folderName}`);
-    console.log(useYarn ? '    yarn dev' : '    npm run dev');
+    console.log('    npm run start:dev');
     console.log();
     console.log('Enjoy your production-ready Node.js app, which already supports a large number of ready-made features!');
     console.log('Check README.md for more info.');

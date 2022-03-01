@@ -11,14 +11,10 @@ Setup database settings inside `ormconfig.json` file
 To create a project, simply run:
 
 ```bash
-npx create-node-express-typeorm-app <project-name>
+npx node-express-typeorm-app <project-name>
 ```
 
 Or
-
-```bash
-npm init node-express-typeorm-app <project-name>
-```
 
 ## Manual Installation
 
