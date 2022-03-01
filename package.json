@@ -1,6 +1,6 @@
 {
   "name": "node-express-typeorm-app",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "bin": "bin/createNodeExpressTypeormApp.js",
   "description": "Create a Node.js (typescript) app for building production-ready RESTful APIs using Express, by running one command",
   "repository": "https://github.com/OsamaShahid/node-express-typeorm-boilerplate.git",
